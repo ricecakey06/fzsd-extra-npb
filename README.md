@@ -67,11 +67,7 @@ fzsd-extra-npb-opensource/
 ## 行为说明
 
 - 本项目只负责 `fzsd` 数据包侧展示与接入
-- 实际“切门”数据写入由服务端模组负责
-- 当前版本已取消每秒自动执行的总分重算
-  - 这样可以避免开启命令显示类模组后后台持续刷出：
-    - `/fzsd_score recalculate fzsd.extra.npb`
-    - `/function #fzsd:module/scoreboard/assign/scoreboard/general`
+- 实际数据写入由服务端模组[portalnpb](https://github.com/ricecakey06/portalnpb)负责
 
 ## 致谢
 
