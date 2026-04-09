@@ -1,0 +1,4 @@
+execute if data storage fzsd:install fzsd.extra{npb:1b} unless score fzsd.module.scoreboard.display.id.portal_broken_count fzsd.variable.integer matches 0.. run function fzsd.extra.npb:display/register_id
+execute if data storage fzsd:install fzsd.extra{npb:1b} run function fzsd.extra.npb:sync/recalculate
+execute if data storage fzsd:install fzsd.extra{npb:1b} if score fzsd.logger.level fzsd.variable.integer matches ..400 run tellraw @a [{"text": "", "color": "green"}, {"nbt": "fzsd.level.debug", "interpret": true, "storage": "fzsd:logger"}, {"text": "fzsd.extra.npb - "}, {"nbt": "fzsd.module.scoreboard.text.portal_broken_count", "interpret": true, "storage": "fzsd:module"}]
+execute if data storage fzsd:install fzsd.extra{npb:1b} if score fzsd.logger.level fzsd.variable.integer matches ..500 run tellraw @a [{"nbt": "fzsd.level.info", "interpret": true, "storage": "fzsd:logger"}, {"text": "已加载扩展：切门榜"}]

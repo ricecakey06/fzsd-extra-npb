@@ -1,0 +1,2 @@
+# 见 #fzsd:module/scoreboard/interactor/display
+execute if data storage fzsd:install fzsd.extra{npb:1b} run tellraw @s [{"text": "[", "color": "dark_gray", "click_event": {"action": "run_command", "command": "/trigger fzsd.module.interactor.trigger set -1211"}, "hover_event": {"action": "show_text", "value": {"nbt": "text", "interpret": true, "storage": "fzsd.extra.npb:text"}}}, {"nbt": "fzsd.module.scoreboard.text.portal_broken_count", "interpret": true, "storage": "fzsd:module"}, {"text": "]"}]

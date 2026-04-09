@@ -1,0 +1,9 @@
+{
+    "__comment": "调用者：#fzsd:module/install",
+    "replace": false,
+    "values": [
+        "fzsd:module/scoreboard/install",
+        "fzsd.extra.bbl:install",
+        "fzsd.extra.npb:install"
+    ]
+}
